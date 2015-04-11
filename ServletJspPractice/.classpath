@@ -14,5 +14,6 @@
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry exported="true" kind="lib" path="D:/BEV/jsoup-1.8.1.jar" sourcepath="D:/BEV/jsoup-1.8.1/org/jsoup"/>
+	<classpathentry exported="true" kind="lib" path="C:/Users/Pankaj/git/ServletJspPractice/ServletJspPractice/WebContent/WEB-INF/mysql-connector-java-5.1.18-bin.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
