@@ -2,6 +2,7 @@ package beans;
 
 public class ProductBean {
 	
+	private int productId;
 	private String name;
 	private String price;
 	
@@ -18,5 +19,17 @@ public class ProductBean {
 		this.price = price;
 	}
 	
-
+	public int getProductId() {
+		return productId;
+	}
+	public void setProductId(int productId) {
+		this.productId = productId;
+	}
+	
+	@Override
+	public String toString() {
+		return "ProductBean [productId=" + productId + ", name=" + name
+				+ ", price=" + price + "]";
+	}
+	
 }
