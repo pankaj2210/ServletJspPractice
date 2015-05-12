@@ -8,6 +8,8 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
 
+import com.mysql.jdbc.Driver;
+
 public class DbUtil {
 	private static Connection connection = null;
 
@@ -24,8 +26,20 @@ public class DbUtil {
 				String url = prop.getProperty("url");
 				String user = prop.getProperty("user");
 				String password = prop.getProperty("password");
-				Class.forName(driver);
+				System.out.println("DRIVER NAME " + driver);
+				// Load the JDBC driver
+	            Class driver_class = Class.forName(driver);
+	            Driver driver1;
+				try {
+					driver1 = (Driver) driver_class.newInstance();
+					DriverManager.registerDriver(driver1);
+				} catch (InstantiationException e) {
+					e.printStackTrace();
+				} catch (IllegalAccessException e) {
+					e.printStackTrace();
+				}
 				connection = DriverManager.getConnection(url, user, password);
+				System.out.println("\n CONNECTION " + connection.toString());
 			} catch (ClassNotFoundException e) {
 				e.printStackTrace();
 			} catch (SQLException e) {

@@ -46,11 +46,9 @@ h1 {
 			<div class="col-md-8">
 				<div class="alert alert-success">
 					Thanks for signing up! When the price
-					of<br>
-					<strong>${prodName}</strong><br>
-					drops below 
-					<strong>${prodPrice}</strong>
-					you'll get notified!.
+					of <strong>${prodName}</strong><br>
+					drops below <strong>${prodPrice}</strong>
+					you'll get notified on <Strong>${email}</Strong>.
 				</div>
 			</div>
 			<div class="col-md-2"></div>

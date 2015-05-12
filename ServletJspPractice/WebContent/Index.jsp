@@ -39,7 +39,7 @@ h1{
 		<div class="row">
 			<div class="col-md-2"></div>
 			<div class="col-md-8" role="navigation">
-				<h1>Get instant price drop alerts for the flipkart products you want to buy!</h1>
+				<h1>Get instant price drop alerts for the flipkart products!</h1>
 				<form class="form-horizontal" action="ScanUserInputServlet" method="post">
 					<div class="form-group">
 						<label for="inputURl" class="col-md-3 control-label">Product URL</label>
